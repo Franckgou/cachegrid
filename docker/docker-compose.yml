@@ -1,0 +1,40 @@
+# docker-compose.yml
+# Single node development setup
+version: '3.8'
+
+services:
+  cachegrid:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: production
+    image: cachegrid:latest
+    container_name: cachegrid-single
+    ports:
+      - "8080:8080"
+    environment:
+      - CACHEGRID_NODE_ID=node-1
+      - CACHEGRID_MAX_SIZE=10000
+      - CACHEGRID_MAX_MEMORY_MB=512
+      - CACHEGRID_CLEANUP_INTERVAL=60
+      - CACHEGRID_LOG_LEVEL=info
+      - CACHEGRID_HOST=0.0.0.0
+      - CACHEGRID_PORT=8080
+    volumes:
+      - cachegrid_data:/app/data
+    networks:
+      - cachegrid-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "healthcheck.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  cachegrid_data:
+
+networks:
+  cachegrid-network:
+    driver: bridge
