@@ -23,7 +23,7 @@ curl http://localhost:8080/health
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/cachegrid.git
+git clone https://github.com/Franckgou/cachegrid.git
 cd cachegrid
 
 # Start CacheGrid
@@ -41,7 +41,7 @@ curl "http://localhost:8080/cache/hello"
 
 ```bash
 # Clone and setup
-git clone https://github.com/your-username/cachegrid.git
+git clone https://github.com/Franckgou/cachegrid.git
 cd cachegrid
 
 # Install dependencies
@@ -492,7 +492,7 @@ cachegrid/
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/cachegrid.git
+git clone https://github.com/Franckgou/cachegrid.git
 cd cachegrid
 
 # Create virtual environment
@@ -594,8 +594,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🤝 Support & Community
 
 - **Documentation**: This README and `/docs` endpoint
-- **Issues**: [GitHub Issues](https://github.com/your-username/cachegrid/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/cachegrid/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Franckgou/cachegrid/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Franckgou/cachegrid/discussions)
 
 ## 🌟 Acknowledgments
 
