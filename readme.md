@@ -177,7 +177,7 @@ Visit `http://localhost:8080/docs` for interactive API documentation.
 
 ```bash
 # For now, clone the repository and install locally
-git clone https://github.com/your-username/cachegrid.git
+git clone https://github.com/Franckgou/cachegrid.git
 cd cachegrid
 pip install -e .
 ```
@@ -595,7 +595,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Documentation**: This README and `/docs` endpoint
 - **Issues**: [GitHub Issues](https://github.com/Franckgou/cachegrid/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Franckgou/cachegrid/discussions)
+
 
 ## 🌟 Acknowledgments
 
